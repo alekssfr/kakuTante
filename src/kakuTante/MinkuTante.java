@@ -138,6 +138,14 @@ public class MinkuTante {
 					JOptionPane.showMessageDialog(null, "Vispirms izveido kaķi", "Brīdinājums",
 							JOptionPane.WARNING_MESSAGE);
 				break;
+				
+			case "Saglabat failā":
+				if(runcis != null)
+					DarbsArFailu.saglabat(runcis, failaNosaukums);
+				else
+					JOptionPane.showMessageDialog(null, "Vispirms izveido kaķi", "Brīdinājums",
+							JOptionPane.WARNING_MESSAGE);
+				break;
 		
 			}
 			
