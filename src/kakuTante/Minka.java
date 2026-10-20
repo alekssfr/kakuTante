@@ -88,7 +88,7 @@ public class Minka {
 			JOptionPane.showMessageDialog(null, "zzzzzzzz",
 					"info", JOptionPane.INFORMATION_MESSAGE);
 		}else {
-			JOptionPane.showMessageDialog(null, saimnieks+"! "+prieksmets+" ej dirst",
+			JOptionPane.showMessageDialog(null, saimnieks+"! "+prieksmets+" man vaig segu!!",
 					"bridinajums", JOptionPane.WARNING_MESSAGE);
 		}
 	}

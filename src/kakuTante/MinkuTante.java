@@ -113,18 +113,32 @@ public class MinkuTante {
 						break;
 						
 					case "Pabarot":
-						
 						String atbilde = runcis.pabarot(virknesParbaude("Ar ko pabarosi kaķi?", "Desu"));
 						JOptionPane.showMessageDialog(null, "Kaķis atgriež "+atbilde, "Informācija", JOptionPane.INFORMATION_MESSAGE);
+						break;
+					case "Nolikt gulēt":
+						String prieksmets = (String) JOptionPane.showInputDialog(null, "Kāds ir priekšmets?", "Priekšmets", JOptionPane.QUESTION_MESSAGE);
+						if(prieksmets!=null) {
+							runcis.gulet(prieksmets);
+						}else {
+						runcis.gulet();
+						}
+						break;
+					case "Palielināt vecumu":
+						runcis.palielinatVecumu();
+						break;
+					case "Apskatīt vecumu":
+						runcis.nolasitVecumu();
+						break;
+					case "Medīt":
+						runcis.medit();
 						break;
 					}
 				}else
 					JOptionPane.showMessageDialog(null, "Vispirms izveido kaķi", "Brīdinājums",
 							JOptionPane.WARNING_MESSAGE);
 				break;
-				
-				
-				
+		
 			}
 			
 		}while(!izvelne.equals("Aizvērt"));
